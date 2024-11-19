@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWOT-Analyse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 20px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+        }
+
+        td {
+            background-color: #fdfdfd;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        td:hover {
+            background-color: #e8f5e9;
+        }
+
+        .editable {
+            cursor: pointer;
+        }
+
+        .heading-cell {
+            background-color: #e8f5e9;
+            font-weight: bold;
+            color: #1b5e20;
+        }
+
+        .combo-cell {
+            background-color: #fff8e1;
+            font-weight: bold;
+            color: #ef6c00;
+        }
+
+        .top-left {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>SWOT-Analyse</h1>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th class="top-left">Unternehmen / Umwelt</th>
+                <th class="heading-cell">Stärken</th>
+                <th class="heading-cell">Schwächen</th>
+            </tr>
+            <tr>
+                <th class="heading-cell">Chancen</th>
+                <td class="editable" contenteditable="true"></td>
+                <td class="editable" contenteditable="true"></td>
+            </tr>
+            <tr>
+                <th class="heading-cell">Risiken</th>
+                <td class="editable" contenteditable="true"></td>
+                <td class="editable" contenteditable="true"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
